@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left top, right top, from(#378157), to(#0b5f30));
+  background-image: linear-gradient(to right, #378157, #0b5f30);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 62.5%;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 95%;
+  height: 300px;
+  background-color: #234632;
+  border-radius: 50px;
+  -webkit-box-shadow: 3px 3px 5px #284734;
+          box-shadow: 3px 3px 5px #284734;
+}
+
+.container .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.container .box .emoji, .container .box .stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .box .emoji {
+  font-size: 5rem;
+  color: #fff;
+  height: 47%;
+}
+
+.container .box .emoji .far {
+  display: none;
+}
+
+.container .box .emoji .far:nth-child(1) {
+  display: block;
+}
+
+.container .box .stars {
+  font-size: 2.4rem;
+  color: #6b6b6b;
+  height: 47%;
+}
+
+.container .box .stars .fas {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.container .box .stars .fas:hover {
+  color: #f5f5b5;
+  text-shadow: 2px 2px 2px #3b5546;
+}
+
+.container .box p {
+  font-size: .7rem;
+  color: #cec5c5;
+  height: 6%;
+  opacity: 0;
+}
+
+@media (min-width: 576px) {
+  .container {
+    width: 70%;
+  }
+  .container .box .stars {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 50%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
